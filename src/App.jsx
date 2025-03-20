@@ -12,6 +12,7 @@ function App() {
   const [error, setError] = useState("");
 
   const handleBtnLatLng = async () => {
+    setData(null)
     if ("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(
         async (position) => {
