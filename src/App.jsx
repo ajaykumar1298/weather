@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 // const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
+import SendIcon from '@mui/icons-material/Send';
+
 const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 function App() {
   const [inputValue, setInputValue] = useState("");
@@ -83,7 +85,7 @@ function App() {
       <h1>Weather App</h1>
     
       <div className="input-container">
-        <button type=" button" className="currBtn" onClick={handleBtnLatLng}>current location</button>
+        <button type=" button" className="currBtn" onClick={handleBtnLatLng}><GpsFixedIcon/></button>
       </div>
       or
       <br />
@@ -96,7 +98,7 @@ function App() {
           placeholder="Enter City Name"
           onChange={(e) => setInputValue(e.target.value)}
         />
-        <button className="gps" onClick={handleBtn}><GpsFixedIcon/></button>
+        <button className="gps" onClick={handleBtn}><SendIcon/></button>
       </div>
     
       {error && <p className="error-msg">{error}</p>}
