@@ -27,13 +27,13 @@ function App() {
   
             if (result.cod === "404") {
               setData(null);
-              setError("City not found. Please enter a valid city.");
+              setError("City not found.");
             } else {
               setData(result);
               setError(""); // Clear error on successful fetch
             }
           } catch (e) {
-            setError("There is some issue fetching the weather data.");
+            setError("There is some issue.");
           }
         },
         (error) => {
@@ -42,8 +42,7 @@ function App() {
         }
       );
     } else {
-      setError("Geolocation is not supported by this browser.");
-      console.log("Geolocation is not supported by this browser.");
+      setError("Not supported by this browser.");
     }
   };
   
@@ -70,14 +69,14 @@ function App() {
 
       if (result.cod === "404") {
         setData(null);
-        setError("City not found. Please enter a valid city.");
+        setError("City not found.");
       } else {
         // console.log(result);
         setData(result);
         setError(""); // Clear error on successful fetch
       }
     } catch (e) {
-      setError("There is some issue fetching the weather data.");
+      setError("There is some issue.");
     }
   };
 
