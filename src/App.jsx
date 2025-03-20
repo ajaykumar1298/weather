@@ -86,6 +86,8 @@ function App() {
         <button type=" button" className="currBtn" onClick={handleBtnLatLng}>current location</button>
       </div>
       or
+      <br />
+      <br />
       <div className="input-container">
         
         <input
