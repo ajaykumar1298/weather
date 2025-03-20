@@ -85,7 +85,7 @@ function App() {
       <h1>Weather App</h1>
     
       <div className="input-container">
-        <button type=" button" className="currBtn" onClick={handleBtnLatLng}><GpsFixedIcon/></button>
+        <button type=" button" className="currBtn" onClick={handleBtnLatLng}>Find me <GpsFixedIcon/></button>
       </div>
       or
       <br />
