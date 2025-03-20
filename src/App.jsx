@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
+// const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 function App() {
   const [inputValue, setInputValue] = useState("");
