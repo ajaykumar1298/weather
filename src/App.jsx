@@ -107,7 +107,7 @@ function App() {
           <h2>{data.name}</h2>
           <p className="temp">{data.main.temp}°C</p>
           <p className="weather-cond">{data.weather[0].description}</p>
-          <p className="feels-like">Feels like: {data.main.feels_like}°C</p>
+          {/* <p className="feels-like">Feels like: {data.main.feels_like}°C</p> */}
           <div className="weather-icon">
             <img
               src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}

@@ -139,4 +139,7 @@ h2 {
   button {
     width: 90% !important;
   }
+  .error-msg {
+    width: 90% !important;
+  }
 }
