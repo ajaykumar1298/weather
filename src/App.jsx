@@ -37,7 +37,7 @@ function App() {
         },
         (error) => {
           console.error("Error getting location:", error);
-          setError("Failed to get location. Please enable location services.");
+          setError("Failed to get location.");
         }
       );
     } else {
